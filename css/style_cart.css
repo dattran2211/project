@@ -1,0 +1,223 @@
+.cart {
+    padding: 100px 0; /* xác định khoảng không gian giữa nội dung hiển thị của một phần tử với đường viền của nó. */
+}
+.cart-top-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-top {
+    height: 2px; /*Đặt chiều cao của thanh ngang.*/
+    width: 70%;  /*Đặt chiều rộng của thanh ngang.*/
+    background-color: #dddddd; /* Đặt màu nền cho thanh ngang. */
+    display: flex;  /*Sử dụng flexbox để sắp xếp các phần tử con theo chiều ngang. */
+    justify-content: space-between; /*Căn các phần tử con cách đều nhau. */
+    align-items: center; /*Căn giữa các phần tử con theo chiều dọc. */
+    margin: 50px 0 100px; /*Tạo khoảng cách trên, dưới và dưới thanh ngang.*/
+}
+.cart-top-item{ /* Đặt chiều rộng của các icon. */
+    width: 40px;  /* Đặt chiều cao của các icon. */
+    height: 40px;  /* Tạo hình tròn cho các icon. */
+    border-radius: 50%;  /* tạo hình tròn cho thanh cart */
+    border: 1px solid #dddddd;  /* Thêm viền xung quanh các icon. */
+    display: flex;  /* Sử dụng flexbox để căn giữa icon bên trong. */
+    align-items: center;  /* Căn giữa icon theo chiều dọc. */
+    justify-content: center;  /* Căn giữa icon theo chiều ngang. */
+    background-color: #fff;  /* Đặt màu nền cho các icon. */
+}
+.cart-top-item i{ /* thay đổi màu icon */
+    color: #dddddd;
+}
+.cart-top-cart{ /* thay đổi màu viền */
+    border: 1px solid #0db7ea;
+}
+.cart-top-cart i{ /* thay đổi màu icon */
+    color: #0db7ea;
+}
+.cart-content-left{
+    flex: 2;  /*Chiếm 2 phần trong tổng số 3 phần của không gian ngang.*/
+    padding-right: 12px; /*Tạo khoảng cách bên phải.*/
+}
+.cart-content-left table {
+    width: 100%;  /*Đặt chiều rộng của bảng.*/
+    text-align: center; /*Căn giữa nội dung trong các ô bảng.*/
+}
+.cart-content-left table th { /*Định dạng cho các tiêu đề và ô dữ liệu trong bảng.*/
+    padding-bottom: 30px; 
+    font-family: var(--main-text-font); 
+    font-size: 12px;
+    text-transform: uppercase; 
+    color: #333; 
+    border-collapse: collapse; 
+    border-bottom: 2px solid #dddddd; 
+}
+.cart-content-left table p{
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+}
+.cart-content-left table input{  
+    width: 30px; /* Kích thước ô số lượng */
+}
+.cart-content-left table span{ /* css của ô X */
+    display: block; /*Hiển thị ô xóa sản phẩm.*/
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.cart-content-left table td { /*Định dạng cho các tiêu đề và ô dữ liệu trong bảng.*/
+    padding: 20px 0;
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-left td:first-child img {
+    width: 130px;
+}
+.cart-content-left td:nth-child(2){
+    max-width: 130px;
+}
+.cart-content-left td:nth-child(3) img {
+    width: 30px;
+}
+.cart-content-right {
+    flex: 1; /*Chiếm 1 phần trong tổng số 3 phần của không gian ngang.*/
+    padding-left: 12px;  /* Tạo khoảng cách bên trái. */
+    border-left: 2px solid #dddddd; /* đường thẳng ở giữa */
+}
+.cart-content-right table {
+    width: 100%; /* Đặt chiều rộng của bảng. */
+}
+.cart-content-right table th { /*Định dạng cho các tiêu đề và ô dữ liệu trong bảng.*/
+    padding-bottom: 30px;
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+    border-collapse: collapse; /* Đường viền không trùng nhau */
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-right table td { /*Định dạng cho các tiêu đề và ô dữ liệu trong bảng.*/
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+    padding: 6px 0;
+}
+.row{
+    display: flex; /*Sử dụng flexbox để sắp xếp các phần tử con theo chiều ngang.*/
+    flex-wrap:wrap /*Cho phép các phần tử con xuống dòng khi không đủ không gian.*/
+}
+/* .cart-content-left,
+.cart-content-right {
+    /* Các style khác vẫn giữ nguyên 
+} */
+.cart-content-right tr:nth-child(4) td { /*Thêm đường viền dưới ô tạm tính.*/
+    border-bottom: 2px solid #dddddd; 
+}
+.cart-content-right tr td:last-child { /* Căn nội dung của ô cuối cùng sang phải. */
+    text-align: right; 
+}
+.cart-content-right-text { 
+    margin: 20px 0;/* Tạo khoảng cách trên và dưới.*/
+    text-align: center; /* Căn giữa nội dung.*/
+}
+.cart-content-right-text p { /*Định dạng cho các đoạn văn.*/
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+}
+.cart-content-right-button { /* căn ô tiếp tục mua hàng và thanh toán ở giữa */
+    text-align: center; /* Căn giữa các nút.*/
+    align-items: center;/* Căn giữa các nút theo chiều dọc.*/
+}
+.cart-content-right-button button { /* căn chỉnh kích thước ô tiếp tục mua hàng và thanh toán(Định dạng cho các nút.)s */
+    padding: 0 18px;
+    height: 35px;
+    cursor: pointer;
+}
+.cart-content-right-button button:first-child { /* đổi màu ô tiếp tục mua hàng và thanh toán */
+    background-color: #fff;
+    border: 1px solid black;
+    margin-right: 20px;
+}
+.cart-content-right-button button:first-child:hover{ /* đổi màu khi lướt qua ô tiếp tục mua hàng và thanh toán */
+    background-color: #ddd;
+}
+.cart-content-right-button button:last-child { /* đổi màu ô tiếp tục mua hàng và thanh toán */
+    background-color: black;
+    color: #fff;
+    border: none;
+    border: 1px solid black;
+}
+.cart-content-right-button button:last-child:hover { /* đổi màu khi lướt qua ô tiếp tục mua hàng và thanh toán */
+    background-color: #dddddd;
+    color: black; /* đổi màu chữ thanh toán */
+}
+.cart-content-right-dangnhap {
+    margin-top: 20px;
+}
+cart-content-right-dangnhap p {
+    font-family: var(--main-text-font);
+    font-size: 12px;
+    color: #333;
+}
+
+/* banner */
+/* Thiết lập kiểu cho container */
+.hamburger-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+.menubenphai { 
+    position: absolute; 
+    top: 50px; 
+    left: -250px; 
+    height: 100%; 
+    width: 250px; 
+    background-color: #f0f0f0; 
+    border-right: 1px solid #ccc; 
+    transition: right 0.4s ease; 
+    padding: 10px; 
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); 
+    list-style-type: none; 
+    
+} 
+.menubenphai.open { 
+    left: 0; 
+} 
+.menubenphai li { 
+    background-color: #f0f0f0; /* Đảm bảo màu nền đồng nhất */
+    padding: 10px; 
+    margin: 5px 0; 
+    border-bottom: 1px solid #ddd; 
+} 
+.menubenphai li:last-child { 
+    border-bottom: none;
+}
+.menubenphai li:hover { 
+    background-color: #e0e0e0;
+ } /* Thêm hiệu ứng hover để danh sách trông đẹp hơn */
+
+
+ /* Map container inside the footer */
+.map-container {
+    max-width: 300px; /* Kích thước tối đa của bản đồ */
+    height: 200px; /* Chiều cao bản đồ */
+    margin: 0 auto; /* Canh giữa bản đồ trong footer */
+    border-radius: 8px; /* Bo góc bản đồ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm bóng cho bản đồ */
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
