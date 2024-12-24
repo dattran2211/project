@@ -78,6 +78,7 @@
     margin: 12px 10px 12px 0;
     font-size: 12px;
     cursor: pointer;
+
 }
 .quantity {
     display: flex;
@@ -172,4 +173,8 @@
 }
 .product-content-right-bottom-content-baoquan{
     display: none;
+}
+.product-content-right-product-size span.selected{
+    background-color: black;
+    color: white;
 }
