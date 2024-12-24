@@ -390,5 +390,19 @@ if(chitiet){
     })
 }
      
+     // Lấy tất cả các span trong div size
+const sizes = document.querySelectorAll('.size span');
+
+// Duyệt qua từng span để thêm sự kiện click
+sizes.forEach(size => {
+    size.addEventListener('click', function() {
+        // Loại bỏ lớp 'selected' khỏi tất cả các span
+        sizes.forEach(s => s.classList.remove('selected'));
+
+        // Thêm lớp 'selected' cho span đã chọn
+        this.classList.add('selected');
+    });
+});
+
 </script>
 </html>
