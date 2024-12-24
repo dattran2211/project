@@ -201,12 +201,14 @@
                 </div>
                 <div class="category-right-content row">
                     <div class="category-right-content-item">
-                        <img src="../images/category/sp1.webp" alt="">
-                        <h1>Đầm Tuysi cổ đức Attina 2 lớp</h1>
-                        <p>2.290.000<sup>đ</sup></p>
+                        <img src="../images/product/sp1.webp" alt="Product" id="productImage1" style="cursor: pointer;">
+
+                        <!-- <img src="../images/product/sp1.webp" alt=""> -->
+                        <h1>Áo dạ tweed EAGEAN</h1>
+                        <p>2.490.000<sup>đ</sup></p>
                     </div>
                     <div class="category-right-content-item">
-                        <img src="../images/category/sp2.webp" alt="">
+                        <img src="../images/category/sp2.webp"  alt="Product" id="productImage2" style="cursor: pointer;">
                         <h1>Little Tweed Jacket</h1>
                         <p>2.590.000<sup>đ</sup></p>
                     </div>
@@ -326,7 +328,13 @@
         }, 5000);
     }, 1000);  // Giả lập độ trễ
 }
-
+    // Nhấn vào ảnh thì chuyển sang trang web
+document.getElementById('productImage1').addEventListener('click', function () {
+    window.location.href = 'product.html';
+});
+document.getElementById('productImage2').addEventListener('click', function () {
+    window.location.href = 'product_2.html';
+});
 
    // code để luôn giữ header ở đầu khi người dùng cuộn trang web
     // Lấy phần tử header

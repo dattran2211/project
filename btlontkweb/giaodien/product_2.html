@@ -163,28 +163,28 @@
         <div class="product-content row">
             <div class="product-content-left row">
                 <div class="product-content-left-big-img">
-                    <img src="../images/product/sp1.webp" alt="">
+                    <img src="../images/product/sp2.webp" alt="">
                 </div>
                 <div class="product-content-left-small-img">
-                    <img src="../images/product/sp1(2).webp" alt="">
-                    <img src="../images/product/sp1(3).webp" alt="">
-                    <img src="../images/product/sp1(4).webp" alt="">
-                    <img src="../images/product/sp1.webp" alt="">
+                    <img src="../images/product/sp2(1).webp" alt="">
+                    <img src="../images/product/sp2(2).webp" alt="">
+                    <img src="../images/product/sp2(3).webp" alt="">
+                    <img src="../images/product/sp2(4).webp" alt="">
                 </div>
             </div>
             <div class="product-content-right">
                 <div class="product-content-right-product-name">
-                    <h1>ÁO TWEED KẺ EAGEAN</h1>
-                    <P>SKU: 67M8900</P>
+                    <h1>LITTLE TWEED JACKET</h1>
+                    <P>SKU: 67M8085</P>
                 </div>
                 <div class="product-content-right-product-price">
-                    <p>2.490.000<sup>đ</sup></p>
+                    <p>2.590.000<sup>đ</sup></p>
                 </div>
                 <div class="product-content-right-product-color">
-                    <p><span style="font-weight: bold;">Màu sắc </span>:Kẻ xanh dương đậm </p> <span style="color: red;">*</span>
+                    <p><span style="font-weight: bold;">Màu sắc </span>: Trắng ngà </p> <span style="color: red;">*</span>
                 </div>
                 <div class="product-content-right-product-color-img">
-                    <img src="../images/product/color1.png" alt="">
+                    <img src="../images/product/002.png" alt="">
                 </div>
                 <div class="product-content-right-product-size">
                     <p style="font-weight: bold;">Size</p>
@@ -202,8 +202,7 @@
                 </div>
                 <p style="color: red;"> Vui lòng chọn size</p>
                 <div class="product-content-right-product-button">
-                    <button id="buyButton"> <i class="fa-solid fa-cart-shopping"></i> <p>MUA HÀNG</p>
-                    </button>
+                    <button id="buyButton"> <i class="fa-solid fa-cart-shopping"></i> <p>MUA HÀNG</p> </button>
                     <button><p>TÌM TẠI CỬA HÀNG</p></button>
                 </div>
                 <div class="product-content-right-product-icon">
@@ -217,7 +216,6 @@
                         <i class="fa-regular fa-envelope" id="emailIcon" style="cursor: pointer;"></i>
                         <p id="emailText" style="cursor: pointer;">Mall</p>
                     </div>
-                </div>
                 </div>
                 <div class="product-content-right-product-QR">
                     <img src="../images/QRcode.png" alt="">
@@ -359,7 +357,8 @@
             header.classList.remove("sticky")
         }
     })
-       // click gửi tin nhắn
+
+    // click gửi tin nhắn
     // Thêm sự kiện click cho cả biểu tượng và chữ Mall
 document.getElementById('emailIcon').addEventListener('click', function () {
     window.location.href = 'mailto:DATFASHION@gmail.com';
@@ -368,11 +367,11 @@ document.getElementById('emailIcon').addEventListener('click', function () {
 document.getElementById('emailText').addEventListener('click', function () {
     window.location.href = 'mailto:DATFASHION@gmail.com';
 });
-// 
+
+// thêm vào giỏ hàng
 document.getElementById('buyButton').addEventListener('click', function () {
     window.open('cart.html', '_blank');
 });
-
     // kết thúc
 // script trang product
 const baoquan = document.querySelector(".baoquan")
