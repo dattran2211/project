@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="MediaCenter, Template, eCommerce">
+    <meta name="robots" content="all">
+
+
+    <!-- Bootstrap Core CSS -->
+    <!-- <link rel="stylesheet" href="..\css\bootstrap.min.css"> -->
+
+
+    <!-- lấy file css gồm các icon có sẵn để dùng ko cần design ở trên mạng, phải có mạng mới chạy được -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
+
+
+    <!-- lấy link css ở ngoài -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_delivery.css">
+    <!--form -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,600italic,700,700italic,800'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+NL:wght@100..400&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style_delivery.css">
+    <title>DAT</title>
+</head>
+<body>
+    <header>
+
+
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menubenphai" id="menubenPhai">
+            <li><a href="categories.html">Thể loại</a></li>
+            <li><a href="cart.html">Gio hàng</a></li>
+            <li><a href="delivery.html">Vận chuyển</a></li>
+            <li><a href="payment.html">Thanh toán</a></li>
+            <li><a href="register.html">Đăng ký</a></li>
+            <li><a href="login.html">Đăng nhập</a></li>
+   
+   
+        </ul>
+       
+        <script> function toggleMenu() {
+            var menu = document.getElementById('menubenPhai');
+            if (menu.classList.contains('open')) {
+                 menu.classList.remove('open');
+                 } else {
+                    menu.classList.add('open');
+                    }
+                    }
+        </script>
+
+
+        <!-- ảnh logo -->
+        <div class="logo">
+          <img src="../images/trangchu/logo4.png">
+        </div>
+        <!-- danh sách menu  -->
+        <div class="menu">
+            <li><a href="">NỮ</a>
+             <ul class="sub-menu">
+                <li><a href="categories.html">Hàng Mới Về</a></li>
+                <li><a href="categories.html">Collection</a></li>
+                <!-- menu cho áo -->
+                <li><a href="categories.html">Áo</a>
+                    <ul>
+                      <li><a href="categories.html">Áo sơ mi</a>
+                      <li><a href="categories.html">Áo thun</a>
+                      <li><a href="categories.html">Áo khoác</a>
+                      <li><a href="categories.html">Len</a>
+                    </ul>
+                </li>
+                <!-- menu cho quần -->
+                <li><a href="categories.html">Quần</a>
+                    <ul>
+                     <li><a href="categories.html">Quần Jean</a></li>
+                     <li><a href="categories.html">Quần Lửng</a></li>
+                     <li><a href="categories.html">Quần Dài</a></li>
+                     <li><a href="categories.html">Quần KaKi</a></li>
+                    </ul>
+                </li>
+   
+             </ul>
+            </li>
+       
+            <li><a href="">NAM</a>
+                <ul class="sub-menu">
+                    <li><a href="categories.html">Hàng Mới Về</a></li>
+                    <li><a href="categories.html">Collection</a></li>
+                    <!-- menu cho áo -->
+                    <li><a href="categories.html">Áo</a>
+                        <ul>
+                          <li><a href="categories.html">Áo Sơ Mi</a>
+                          <li><a href="categories.html">Áo Thun</a>
+                          <li><a href="categories.html">Áo Khoác</a>
+                          <li><a href="categories.html">Áo Polo</a>
+                          <li><a href="categories.html">Áo Len</a>
+   
+                        </ul>
+                    </li>
+                    <!-- menu cho quần -->
+                    <li><a href="categories.html">Quần</a>
+                        <ul>
+                         <li><a href="categories.html">Quần Jean</a></li>
+                         <li><a href="categories.html">Quần Lửng</a></li>
+                         <li><a href="categories.html">Quần Dài</a></li>
+                         <li><a href="categories.html">Quần KaKi</a></li>
+                        </ul>
+                    </li>
+       
+                 </ul>
+            </li>
+   
+   
+            <li><a href="">TRẺ EM</a>
+                <ul class="sub-menu">
+                    <li><a href="categories.html">Bé Gái</a>
+                        <ul>
+                          <li><a href="categories.html">Áo Bé Gái</a>
+                          <li><a href="categories.html">Quần Bé Gái</a>
+                          <li><a href="categories.html">Váy Bé Gái</a>
+                          <li><a href="categories.html">Chân Váy Bé Gái </a>
+                          <li><a href="categories.html">Phụ Kiện Bé Gái</a>
+   
+                        </ul>
+                    </li>
+                    <li><a href="categories.html">Bé Trai</a>
+                        <ul>
+                            <li><a href="categories.html">Áo Bé Trai</a>
+                            <li><a href="categories.html">Quần Bé Trai</a>
+                            <li><a href="categories.html">Phụ Kiện Bé Trai</a>
+                        </ul>
+                    </li>
+       
+                 </ul>
+            </li>
+           
+   
+            <li><a href="">BỘ SƯU TẬP</a>
+                <ul class="sub-menu">
+                    <li><a href="categories.html">Nữ</a>
+                        <ul>
+                          <li><a href="categories.html">SAPPHIRE CHIC</a>
+                          <li><a href="categories.html">MUSE OF THE SUN</a>
+                          <li><a href="categories.html">DELICATE </a>
+                          <li><a href="categories.html">ROSA CHARM</a>
+                          <li><a href="categories.html">WHISPERS OF AUTUMN</a>
+                          <li><a href="categories.html">MODERN STYLE </a>
+                        </ul>
+                    </li>
+            </ul>
+            </li>
+   
+            <li><a href="">SALES</a>
+                <ul class="sub-menu">
+                    <li><a href="categories.html">Last Chance Sale</a>
+                        <ul>
+                          <li><a href="categories.html">100k đến 250k</a>
+                          <li><a href="categories.html">300k đến 450k</a>
+                          <li><a href="categories.html">Từ 500k</a>
+                        </ul>
+                    </li>
+   
+                    <li><a href="categories.html">Deal độc quyền T10 - SALE upto 50%</a>
+                        <ul>
+                          <li><a href="categories.html">Áo</a>
+                          <li><a href="categories.html">Đầm</a>
+                          <li><a href="categories.html">Chân váy</a>
+                          <li><a href="categories.html">Quần</a>
+   
+                        </ul>
+                    </li>
+            </ul>
+            </li>
+   
+            <li><a href="" id="about-us">VỀ CHÚNG TÔI</a>
+            </li>
+   
+           
+   
+        </div>
+        <!-- ô để tìm -->
+        <div class="others">
+            <li><input placeholder="Tìm Kiếm" type="text"><i class="fas fa-search"></i></li>
+            <!-- font awesome từ file css ở trên -->
+            <li><a class="fa fa-th" href="product.html"></a></li>
+            <li><a class="fa fa-shopping-cart" href="cart.html"></a></li>
+            <li><a class="fa fa-credit-card" href="payment.html"></a></li>
+            <li><a class="fa fa-shipping-fast" href="delivery.html"></a></li>
+            <li><a class="fa fa-sign-in-alt" href="login.html"></a></li>
+            <li><a class="fa fa-user" href="register.html"></a></li>
+   
+        </div>
+    </header>
+<!-- Phần payment------------------------------- -->
+<div class="container my-5">
+</div>
+<h2 style="color: #333; font-size: 25px; margin-left: 70px; margin-top: 100px;">Thanh toán</h2>
+<div class="container my-4">
+    <form id="payment-form" style="font-size: 1.4rem;">
+        <div class="payment-content row">
+            <div class="payment-content-left">
+                <div class="payment-content-left-method-delivery">
+                    <p style="font-weight: bold">Phương thức giao hàng</p>
+                    <div class="payment-content-left-method-delivery-item">
+                        <input checked type="radio">
+                        <label for="">Giao hàng chuyển phát nhanh </label>
+                    </div>
+                </div>
+                <div class="payment-content-left-method-payment">
+                    <p style="font-weight: bold">Phương thức thanh toán </p>
+                    <p>Mọi giao dịch đều được bảo mật và mã hóa. Thông tin thẻ tín dụng sẽ không bao giờ được lưu lại.</p>
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label for="">Thanh toán bằng thẻ tín dụng (OnePay)</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img">
+                        <img src="../images/trangchu/visa.png" alt="Visa">
+                    </div>
+                    <div class="payment-content-left-method-payment-item">
+                        <input checked name="method-payment" type="radio">
+                        <label for="">Thanh toán bằng thẻ ATM (OnePay)</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label for="">Thanh toán Momo</label>
+                    </div>
+                    <div class="payment-content-left-method-payment-item-img">
+                        <img src="../images/trangchu/momo.png" alt="Momo">
+                    </div>
+                    <div class="payment-content-left-method-payment-item">
+                        <input name="method-payment" type="radio">
+                        <label for="">Thu tiền tận nơi</label>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="payment-content-right">
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã giảm giá/Quà tặng">
+                    <button><i class="fa-solid fa-check"></i></button>
+                </div>
+                <div class="payment-content-right-button">
+                    <input type="text" placeholder="Mã cộng tác viên">
+                   
+                <div class="payment-content-right-mnv">
+                    <select name="" id="">
+                        <option value=""> Chọn mã nhân viên thân thiết</option>
+                        <option value=""> A100</option>
+                        <option value=""> A101</option>
+                        <option value=""> A102</option>
+                        <option value=""> A103</option>
+                    </select>
+                </div>
+                <style>
+                    .payment-content-right input[type="text"],
+                    .payment-content-right select {
+                        width: 100%;
+                        height: 45px;
+                        padding: 10px;
+                        font-size: 1rem;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        margin-bottom: 15px;
+                        box-sizing: border-box;
+                    }
+
+
+                    .payment-content-right-button button {
+                        height: 45px;
+                        width: 45px;
+                        background-color: #333;
+                        color: white;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                    }
+
+
+                    .payment-content-right-button button i {
+                    font-size: 1.2rem;
+                    }
+
+
+                    .payment-content-right {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    }
+                </style>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-payment"style="background-color:#333; color: white; font-size: 1.5rem; margin-top: 40px; margin-left: 40%; border: 2px solid black;">HOÀN THÀNH</button>
+    </div>
+</section>
+
+
+<!-- -------------------------- ---------------------------->
+
+
+ <section class="app-container">
+    <p>Tải ứng dụng DAT FASHION</p>
+    <div class="app-google">
+        <a href="https://play.google.com/store/apps" target="_blank">
+            <img src="../images/trangchu/googleplay.png" alt="Google Play">
+          </a>
+          
+          <a href="https://apps.apple.com/us/app" target="_blank">
+            <img src="../images/trangchu/appstore.png" alt="App Store">
+          </a>
+    </div>
+    <p>Nhận bản tin DAT FASHION</p>
+    <input type="text" placeholder="Nhập email của bạn...">
+    <button type="button" onclick="sendEmail()">GỬI</button>
+    
+    <div class="success-dialog" id="successDialog">
+        Bản Tin Mới Nhất Đã Được Gửi Thành Công Tới Email Của Bạn!
+    </div>
+    
+</section>
+</section> 
+
+
+
+
+
+
+
+<script>
+    document.getElementById('about-us').addEventListener('click', function(event) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+        document.getElementById('footer').scrollIntoView({
+            behavior: 'smooth', // Cuộn mượt
+            block: 'end' // Đưa footer vào cuối trang
+        });
+    });
+</script>
+
+<footer class="footer" id="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Về DAT FASHION</h3>
+            <ul>
+                <li><a href="index.html">Tên : Công ty TNHH 4 Thành viên DAT FASHION</a></li>
+                <li><a href="index.html">Đại chỉ : 133 Chùa Bộc, Đống Đa, Hà Nội</a></li>
+                <li><a href="index.html">Liên hệ : 094945849</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Hỗ trợ</h3>
+            <ul>
+                <li><a href="index.html">Chính sách vận chuyển</a></li>
+                <li><a href="index.html">Chính sách bảo hành</a></li>
+                <li><a href="index.html">Chính sách đổi - trả - hoàn tiền</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Dịch vụ</h3>
+            <ul>
+                <li><a href="index.html">Điều khoản sử dụng</a></li>
+                <li><a href="index.html">Chính sách bảo mật thanh toán</a></li>
+                <li><a href="index.html">Chính sách bảo mật thông tin cá nhân</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Mạng Xã Hội</h3>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/caothuLQM">
+                    <i class="fa-brands fa-facebook"></i>  
+                </a>
+
+                <a href="https://x.com/instagram?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&mx=2">
+                    <i class="fa-brands fa-instagram"></i>  
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=lbkkCCCoFzQ">
+                    <i class="fa-brands fa-youtube"></i>  
+                </a>
+                                 
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3661564476544!2d106.68409171539983!3d10.776894562504634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3c58d34207%3A0x53288d157fc84de1!2sBanking%20Academy!5e0!3m2!1sen!2s!4v1692651056744!5m2!1sen!2s"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+    </div>
+</footer>
+
+
+<!-- thêm vào giỏ hàng -->
+<script>
+    document.querySelectorAll('.btn.btn-payment').forEach(function (button) {
+    button.addEventListener('click', function () {
+        window.open('index.html', '_blank');
+    });
+    });
+    </script>
+
+
+
+ 
+ 
+</body>
+</html>

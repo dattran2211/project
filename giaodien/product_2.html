@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lấy file css gồm các icon có sẵn để dùng ko cần design ở trên mạng, phải có mạng mới chạy được -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" crossorigin="anonymous">
+
+
+    <!-- lấy link css ở ngoài -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_product.css">
+    <title>DAT FASHION</title>
+</head>
+<body>
+    <header>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menubenphai" id="menubenPhai">
+            <li><a href="categories.html">Thể loại</a></li>
+            <li><a href="cart.html">Gio hàng</a></li>
+            <li><a href="delivery.html">Vận chuyển</a></li>
+            <li><a href="payment.html">Thanh toán</a></li>
+            <li><a href="register.html">Đăng ký</a></li>
+            <li><a href="login.html">Đăng nhập</a></li>
+   
+   
+        </ul>
+       
+        <script> function toggleMenu() {
+            var menu = document.getElementById('menubenPhai');
+            if (menu.classList.contains('open')) {
+                 menu.classList.remove('open');
+                 } else {
+                    menu.classList.add('open');
+                    }
+                    }
+        </script>
+        <!-- ảnh logo -->
+        <div class="logo">
+          <img src="../images/trangchu/logo4.png">
+        </div>
+   
+        </div>
+   
+        <!-- danh sách menu  -->
+        <div class="menu">
+            <li><a href="">NỮ</a>
+             <ul class="sub-menu">
+                <li><a href="categories.html">Hàng Mới Về</a></li>
+                <li><a href="categories.html">Collection</a></li>
+                <!-- menu cho áo -->
+                <li><a href="categories.html">Áo</a>
+                    <ul>
+                      <li><a href="categories.html">Áo sơ mi</a>
+                      <li><a href="categories.html">Áo thun</a>
+                      <li><a href="categories.html">Áo khoác</a>
+                      <li><a href="categories.html">Len</a>
+                    </ul>
+                </li>
+                <!-- menu cho quần -->
+                <li><a href="categories.html">Quần</a>
+                    <ul>
+                     <li><a href="categories.html">Quần Jean</a></li>
+                     <li><a href="categories.html">Quần Lửng</a></li>
+                     <li><a href="categories.html">Quần Dài</a></li>
+                     <li><a href="categories.html">Quần KaKi</a></li>
+                    </ul>
+                </li>
+   
+             </ul>
+            </li>
+       
+            <li><a href="">NAM</a>
+                <ul class="sub-menu">
+                    <li><a href="categories.html">Hàng Mới Về</a></li>
+                    <li><a href="categories.html">Collection</a></li>
+                    <!-- menu cho áo -->
+                    <li><a href="categories.html">Áo</a>
+                        <ul>
+                          <li><a href="categories.html">Áo Sơ Mi</a>
+                          <li><a href="categories.html">Áo Thun</a>
+                          <li><a href="categories.html">Áo Khoác</a>
+                          <li><a href="categories.html">Áo Polo</a>
+                          <li><a href="categories.html">Áo Len</a>
+   
+                        </ul>
+                    </li>
+                    <!-- menu cho quần -->
+                    <li><a href="categories.html">Quần</a>
+                        <ul>
+                         <li><a href="categories.html">Quần Jean</a></li>
+                         <li><a href="categories.html">Quần Lửng</a></li>
+                         <li><a href="categories.html">Quần Dài</a></li>
+                         <li><a href="categories.html">Quần KaKi</a></li>
+                        </ul>
+                    </li>
+       
+                 </ul>
+            </li>
+   
+   
+            <li><a href="">TRẺ EM</a>
+                <ul class="sub-menu">
+                    <li><a href="categories.html">Bé Gái</a>
+                        <ul>
+                          <li><a href="categories.html">Áo Bé Gái</a>
+                          <li><a href="categories.html">Quần Bé Gái</a>
+                          <li><a href="categories.html">Váy Bé Gái</a>
+                          <li><a href="categories.html">Chân Váy Bé Gái </a>
+                          <li><a href="categories.html">Phụ Kiện Bé Gái</a>
+   
+                        </ul>
+                    </li>
+                    <li><a href="categories.html">Bé Trai</a>
+                        <ul>
+                            <li><a href="categories.html">Áo Bé Trai</a>
+                            <li><a href="categories.html">Quần Bé Trai</a>
+                            <li><a href="categories.html">Phụ Kiện Bé Trai</a>
+                        </ul>
+                    </li>
+       
+                 </ul>
+            </li>
+           
+   
+            <li><a href="">BỘ SƯU TẬP</a>
+                <ul class="sub-menu">
+                    <li><a href="categories.html">Nữ</a>
+                        <ul>
+                          <li><a href="categories.html">SAPPHIRE CHIC</a>
+                          <li><a href="categories.html">MUSE OF THE SUN</a>
+                          <li><a href="categories.html">DELICATE </a>
+                          <li><a href="categories.html">ROSA CHARM</a>
+                          <li><a href="categories.html">WHISPERS OF AUTUMN</a>
+                          <li><a href="categories.html">MODERN STYLE </a>
+                        </ul>
+                    </li>
+            </ul>
+            </li>
+   
+            <li><a href="">SALES</a>
+                <ul class="sub-menu">
+                    <li><a href="categories.html">Last Chance Sale</a>
+                        <ul>
+                          <li><a href="categories.html">100k đến 250k</a>
+                          <li><a href="categories.html">300k đến 450k</a>
+                          <li><a href="categories.html">Từ 500k</a>
+                        </ul>
+                    </li>
+   
+                    <li><a href="categories.html">Deal độc quyền T10 - SALE upto 50%</a>
+                        <ul>
+                          <li><a href="categories.html">Áo</a>
+                          <li><a href="categories.html">Đầm</a>
+                          <li><a href="categories.html">Chân váy</a>
+                          <li><a href="categories.html">Quần</a>
+   
+                        </ul>
+                    </li>
+            </ul>
+            </li>
+   
+            <li><a href="" id="about-us">VỀ CHÚNG TÔI</a>
+            </li>
+   
+           
+   
+        </div>
+        <!-- ô để tìm -->
+        <div class="others">
+            <li><input placeholder="Tìm Kiếm" type="text"><i class="fas fa-search"></i></li>
+            <!-- font awesome từ file css ở trên -->
+            <li><a class="fa fa-th" href="product.html"></a></li>
+            <li><a class="fa fa-shopping-cart" href="cart.html"></a></li>
+            <li><a class="fa fa-credit-card" href="payment.html"></a></li>
+            <li><a class="fa fa-shipping-fast" href="delivery.html"></a></li>
+            <li><a class="fa fa-sign-in-alt" href="login.html"></a></li>
+            <li><a class="fa fa-user" href="register.html"></a></li>
+   
+        </div>
+    </header>
+
+
+<!-- Phần product------------------------------- -->
+ <section class="product">
+    <div class="container">
+        <div class="product-top row">
+            <p>Trang chủ</p> <span>&#10513;</span> <p>Nữ</p> <span>&#10513;</span> <p>Hàng nữ mới về</p>
+        </div>
+        <div class="product-content row">
+            <div class="product-content-left row">
+                <div class="product-content-left-big-img">
+                    <img src="../images/product/sp2.webp" alt="">
+                </div>
+                <div class="product-content-left-small-img">
+                    <img src="../images/product/sp2.webp" alt="">
+                    <img src="../images/product/sp22.webp" alt="">
+                    <img src="../images/product/sp23.webp" alt="">
+                    <img src="../images/product/sp24.webp" alt="">
+                </div>
+            </div>
+            <div class="product-content-right">
+                <div class="product-content-right-product-name">
+                    <h1>Little Tweed Jacket</h1>
+                    <P>SKU: 67M8085</P>
+                </div>
+                <div class="product-content-right-product-price">
+                    <p>2.590.000<sup>đ</sup></p>
+                </div>
+                <div class="product-content-right-product-color">
+                    <p><span style="font-weight: bold;">Màu sắc </span>: Trắng ngà </p> <span style="color: red;">*</span>
+                </div>
+                <div class="product-content-right-product-color-img">
+                    <img src="../images/product/002.png" alt="">
+                </div>
+                <div class="product-content-right-product-size">
+                    <p style="font-weight: bold;">Size</p>
+                    <div class="size">
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        <span>XXL</span>
+                    </div>
+                </div>
+                <div class="quantity">
+                    <p style="font-weight: bold;">Số lượng</p>
+                    <input type="number" min="0" value="1">
+                </div>
+                <p style="color: red;"> Vui lòng chọn size</p>
+                <div class="product-content-right-product-button">
+                    <button id="buyButton"> <i class="fa-solid fa-cart-shopping"></i> <p>MUA HÀNG</p> </button>
+                    <button><p>TÌM TẠI CỬA HÀNG</p></button>
+                </div>
+                <div class="product-content-right-product-icon">
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fa-solid fa-phone"></i><p>Hotline</p>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fa-regular fa-comments"></i><p>Chat</p>
+                    </div>
+                    <div class="product-content-right-product-icon-item">
+                        <i class="fa-regular fa-envelope" id="emailIcon" style="cursor: pointer;"></i>
+                        <p id="emailText" style="cursor: pointer;">Mall</p>
+                    </div>
+                </div>
+                <div class="product-content-right-product-QR">
+                    <img src="../images/QRcode.png" alt="">
+                </div>
+                <div class="product-content-right-bottom">
+                    <div class="product-content-right-bottom-top">
+                        &#8595;
+                    </div>
+                    <div class="product-content-right-bottom-content-big">
+                        <div class="product-content-right-bottom-content-big-title row">
+                            <div class="product-content-right-bottom-content-big-title-item chitiet">
+                                <p>Chi tiết</p>
+                            </div>
+                            <div class="product-content-right-bottom-content-big-title-item baoquan">
+                                <p>Bảo quản</p>
+                            </div>
+                            </div>
+                            <div class="product-content-right-bottom-content">
+                                <div class="product-content-right-bottom-content-chitiet ">
+                                    <p>Thiết kế nằm trong BST SAPPHIRE CHIC, lấy cảm hứng từ sắc xanh quý phái của đá Sapphire với những thiết kế công sở hiện đại, ghi dấu ấn với tính thẩm mỹ cao và sự tinh tế qua các chi tiết tạo điểm nhấn mà không mất đi nét sang trọng vốn có.<br> <br>
+
+
+                                        Áo Tweed kẻ dáng suông thể hiện sự sang trọng và tinh tế, ựa chọn lý tưởng cho nàng yêu thích phong cách thời trang cổ điển. Chất liệu tweed cao cấp với bề mặt dệt kim độc đáo giúp áo vừa có độ bền chắc, vừa mềm mại, ấm áp cho những ngày se lạnh. Họa tiết kẻ xanh quý phái Eagean tạo điểm nhấn thời thượng, dễ dàng phối hợp với các trang phục khác.<br> <br>
+                                       
+                                        Thiết kế dáng suông thoải mái, không quá ôm sát, giúp người mặc luôn tự tin trong mọi hoạt động. Cổ tròn và đường viền tỉ mỉ càng tăng thêm vẻ sang trọng và chỉn chu cho chiếc áo. Bạn có thể dễ dàng kết hợp áo với quần tây, chân váy hoặc quần jeans để tạo nên nhiều phong cách khác nhau, từ công sở đến dạo phố.<br> <br>
+                                    </p>
+                                </div>
+                                <div class="product-content-right-bottom-content-baoquan">
+                                    <p>
+                                        Chi tiết bảo quản sản phẩm : <br> <br>
+
+
+* Các sản phẩm thuộc dòng cao cấp (Senora) và áo khoác (dạ, tweed, lông, phao) chỉ giặt khô, tuyệt đối không giặt ướt. <br> </br>
+
+
+* Vải dệt kim: sau khi giặt sản phẩm phải được phơi ngang tránh bai giãn.<br> <br>
+
+
+* Vải voan, lụa, chiffon nên giặt bằng tay.<br> <br>
+
+
+* Vải thô, tuytsi, kaki không có phối hay trang trí đá cườm thì có thể giặt máy.<br> <br>
+
+
+* Vải thô, tuytsi, kaki có phối màu tương phản hay trang trí voan, lụa, đá cườm thì cần giặt tay.<br> <br>
+
+
+* Đồ Jeans nên hạn chế giặt bằng máy giặt vì sẽ làm phai màu jeans. Nếu giặt thì nên lộn trái sản phẩm khi giặt, đóng khuy, kéo khóa, không nên giặt chung cùng đồ sáng màu, tránh dính màu vào các sản phẩm khác. <br> <br>
+
+
+* Các sản phẩm cần được giặt ngay không ngâm tránh bị loang màu, phân biệt màu và loại vải để tránh trường hợp vải phai. Không nên giặt sản phẩm với xà phòng có chất tẩy mạnh, nên giặt cùng xà phòng pha loãng.<br> <br>
+
+
+* Các sản phẩm có thể giặt bằng máy thì chỉ nên để chế độ giặt nhẹ, vắt mức trung bình và nên phân các loại sản phẩm cùng màu và cùng loại vải khi giặt.<br> <br>
+
+
+* Nên phơi sản phẩm tại chỗ thoáng mát, tránh ánh nắng trực tiếp sẽ dễ bị phai bạc màu, nên làm khô quần áo bằng cách phơi ở những điểm gió sẽ giữ màu vải tốt hơn.<br> <br>
+
+
+* Những chất vải 100% cotton, không nên phơi sản phẩm bằng mắc áo mà nên vắt ngang sản phẩm lên dây phơi để tránh tình trạng rạn vải.<br> <br>
+
+
+* Khi ủi sản phẩm bằng bàn là và sử dụng chế độ hơi nước sẽ làm cho sản phẩm dễ ủi phẳng, mát và không bị cháy, giữ màu sản phẩm được đẹp và bền lâu hơn. Nhiệt độ của bàn là tùy theo từng loại vải. <br> <br>
+                                    </p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+       
+    </div>
+ </section>
+
+
+ <!-- -------------------------- ---------------------------->
+
+
+
+
+<section class="app-container">
+    <p>Tải ứng dụng DAT FASHION</p>
+    <div class="app-google">
+        <img src="../images/trangchu/googleplay.png">
+        <img src="../images/trangchu/appstore.png">
+    </div>
+    <p>Nhận bản tin DATFASHION</p>
+    <input type="text" placeholder="Nhập email của bạn...">
+    <button type="button" onclick="sendEmail()">GỬI</button>
+   
+    <div class="success-dialog" id="successDialog">
+        Bản Tin Mới Nhất Đã Được Gửi Thành Công Tới Email Của Bạn!
+    </div>
+   
+</section>
+</section>
+
+
+<!-- footer -->
+<footer class="footer" id="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Về DAT FASHION</h3>
+            <ul>
+                <li><a href="index.html">Tên : Công ty TNHH 4 Thành viên DAT FASHION</a></li>
+                <li><a href="index.html">Đại chỉ : 133 Chùa Bộc, Đống Đa, Hà Nội</a></li>
+                <li><a href="index.html">Liên hệ : 094945849</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Hỗ trợ</h3>
+            <ul>
+                <li><a href="index.html">Chính sách vận chuyển</a></li>
+                <li><a href="index.html">Chính sách bảo hành</a></li>
+                <li><a href="index.html">Chính sách đổi - trả - hoàn tiền</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Dịch vụ</h3>
+            <ul>
+                <li><a href="index.html">Điều khoản sử dụng</a></li>
+                <li><a href="index.html">Chính sách bảo mật thanh toán</a></li>
+                <li><a href="index.html">Chính sách bảo mật thông tin cá nhân</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Mạng Xã Hội</h3>
+
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/caothuLQM">
+                    <i class="fa-brands fa-facebook"></i>  
+                </a>
+
+
+                <a href="https://x.com/instagram?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&mx=2">
+                    <i class="fa-brands fa-instagram"></i>  
+                </a>
+
+
+                <a href="https://www.youtube.com/watch?v=lbkkCCCoFzQ">
+                    <i class="fa-brands fa-youtube"></i>  
+                </a>
+                                 
+            </div>
+        </div>
+        <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3661564476544!2d106.68409171539983!3d10.776894562504634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3c58d34207%3A0x53288d157fc84de1!2sBanking%20Academy!5e0!3m2!1sen!2s!4v1692651056744!5m2!1sen!2s"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          </div>
+</footer>
+<!-- footer -->
+ 
+</body>
+
+
+<script>
+    document.getElementById('about-us').addEventListener('click', function(event) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+        document.getElementById('footer').scrollIntoView({
+            behavior: 'smooth', // Cuộn mượt
+            block: 'end' // Đưa footer vào cuối trang
+        });
+    });
+</script>
+
+
+<script>
+    // code xử lý khi nút gửi email được nhấn
+   function sendEmail() {
+    // Giả lập quá trình gửi email
+    setTimeout(function() {
+        // Hiển thị hộp thoại thành công
+        const dialog = document.getElementById('successDialog');
+        dialog.style.display = 'block';
+       
+        // Ẩn hộp thoại thành công sau 5 giây
+        setTimeout(function() {
+            dialog.style.display = 'none';
+        }, 5000);
+    }, 1000);  // Giả lập độ trễ
+}
+   // code để luôn giữ header ở đầu khi người dùng cuộn trang web
+    // Lấy phần tử header
+    const header = document.querySelector("header")
+    // Lắng nghe sự kiện khi người dùng cuộn trang
+    window.addEventListener("scroll", function() {
+    // Lấy vị trí hiện tại của trang so với đỉnh
+    x = window.pageYOffset
+    // Nếu người dùng cuộn xuống, thêm class "sticky" để làm header vẫn có ở trên cùng
+        if(x > 0) {
+            header.classList.add("sticky")
+        } else {
+            // Nếu cuộn trở về vị trí ban đầu, xóa class "sticky"
+            header.classList.remove("sticky")
+        }
+    })
+
+
+    // click gửi tin nhắn
+    // Thêm sự kiện click cho cả biểu tượng và chữ Mall
+document.getElementById('emailIcon').addEventListener('click', function () {
+    window.location.href = 'mailto:DATFASHION@gmail.com';
+});
+
+
+document.getElementById('emailText').addEventListener('click', function () {
+    window.location.href = 'mailto:DATFASHION@gmail.com';
+});
+
+
+// thêm vào giỏ hàng
+// document.getElementById('buyButton').addEventListener('click', function () {
+//     window.open('cart.html', '_blank');
+// });
+    // kết thúc
+// script trang product
+const baoquan = document.querySelector(".baoquan")
+const chitiet = document.querySelector(".chitiet")
+if(baoquan){
+    baoquan.addEventListener("click",function(){
+        document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "none";
+        document.querySelector(".product-content-right-bottom-content-baoquan").style.display = "block";
+    })
+}
+if(chitiet){
+    chitiet.addEventListener("click",function(){
+        document.querySelector(".product-content-right-bottom-content-chitiet").style.display = "block";
+        document.querySelector(".product-content-right-bottom-content-baoquan").style.display = "none";
+    })
+}
+     // Lấy tất cả các span trong div size
+const sizes = document.querySelectorAll('.size span');
+
+
+// Duyệt qua từng span để thêm sự kiện click
+sizes.forEach(size => {
+    size.addEventListener('click', function() {
+        // Loại bỏ lớp 'selected' khỏi tất cả các span
+        sizes.forEach(s => s.classList.remove('selected'));
+
+
+        // Thêm lớp 'selected' cho span đã chọn
+        this.classList.add('selected');
+    });
+});
+</script>
+<script src="../java/product_2.js"></script>
+</html>
+
+
+
